@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /VeriCodeGen-NeurIPS2026-Sponsorship-Prospectus.pdf
+
+Sitemap: https://verifiableagentsafety.github.io/sitemap.xml

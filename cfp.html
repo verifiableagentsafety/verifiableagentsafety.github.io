@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Call for Papers | Verifiable Agent Safety | ICLR 2027 Workshop</title>
+    <meta name="description" content="Proposed ICLR 2027 workshop on Verifiable Agent Safety: machine-checkable guarantees for agents that reason, act, and adapt.">
+    <meta name="twitter:card" content="summary">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+    <div id="header"></div>
+    <div id="navbar"></div>
+
+    <div class="container mt-5">
+        <section id="call_for_papers">
+            <h2>Call for Papers</h2>
+            <p>We invite submissions to the proposed <b>Verifiable Agent Safety workshop at ICLR 2027</b>. The workshop focuses on machine-checkable guarantees for agents that reason, act, and adapt.</p>
+            <p>Workshop acceptance, dates, and submission details remain to be confirmed.</p>
+
+            <section id="topics" class="Topics">
+                <h3>Topics will include, but are not limited to:</h3>
+                <ol>
+                    <li><strong>Specifications that capture user intent:</strong> Permission, information-flow, resource, and task-completion contracts; autoformalization, ambiguity and vacuity detection, and human correction.</li>
+                    <li><strong>Safe actions and runtime enforcement:</strong> Proof-carrying actions, verified tool interfaces, complete mediation, fail-closed execution, and connections between abstract guarantees and their implementation.</li>
+                    <li><strong>Long-horizon composition and adaptation:</strong> Preserving invariants and obligations across memory, delegation, workflow revision, retries, checkpointing, restoration, forking, and merging.</li>
+                    <li><strong>Communication, evidence, and oversight:</strong> Verifiable multi-agent protocols, provenance, adversarial debate, and the assumptions placed on observations, semantic interpretations, and judgments.</li>
+                    <li><strong>Learning and evaluation with guarantees:</strong> Verification feedback for training and inference; specification gaming, guarantee coverage, attacks, task success, verification costs, and unnecessary refusals.</li>
+                </ol>
+            </section>
+
+            <h3>Important dates (tentative):</h3>
+                <p>Dates are proposed and subject to confirmation. Submission deadlines are at 23:59 Anywhere on Earth (AoE).</p>
+                <ul>
+                    <li><span style="color: red;">Abstract Registration Deadline: January 25, 2027</span></li>
+                    <li><span style="color: red;">Paper Submission Deadline: February 1, 2027</span></li>
+                    <li>Author Notification: February 26, 2027</li>
+                    <li>Workshop Date: April 29 or 30, 2027 (assigned day to be confirmed)</li>
+                </ul>
+
+            <h3>Submission policy</h3>
+            <p><b>Submission portal and formatting template:</b> To be announced. Submissions are not yet open.</p>
+            <ul>
+                <li><b>Paper format:</b> A single paper track accepting <b>4–9 pages</b> of main content, excluding references and optional appendices.</li>
+                <li><b>Contribution types:</b> Formal results, verified monitors, empirical studies, replications, and carefully analyzed counterexamples are welcome. Demonstration papers may include a video and artifact link. Complete system verification is not required.</li>
+                <li><b>Abstract registration:</b> Register a title and abstract by January 25, 2027, and submit the complete paper by February 1, 2027, both at 23:59 AoE.</li>
+                <li><b>Novel and ongoing research:</b> Previously published work may supply context, but submissions must identify a new result, extension, analysis, or perspective.</li>
+                <li><b>Double-blind reviewing:</b> Submissions and supplementary or linked material must be anonymized. Remove author names and identifying acknowledgments and provide anonymous artifact access.</li>
+                <li><b>Non-archival:</b> Accepted papers will be publicly available on OpenReview and the workshop website. There are no formally published proceedings.</li>
+            </ul>
+
+            <h3>Review criteria and artifacts</h3>
+            <p>We aim to obtain three human reviews per paper, combining machine learning and verification expertise where possible. Criteria include relevance, technical validity, clarity of the safety claim and assumptions, novelty appropriate to the contribution, and reproducibility. Papers must distinguish proved properties, tested behavior, and conjectures. Pure mathematical proof-search benchmarks without a connection to agent behavior are outside the workshop's central scope.</p>
+            <p>Technical submissions should include a concise <b>agent guarantee card</b> recording:</p>
+            <ul>
+                <li>The safety property being claimed.</li>
+                <li>The agent and environment model.</li>
+                <li>The assumptions and trusted components.</li>
+                <li>The checker and supporting evidence.</li>
+                <li>The implementation boundary connecting the formal model to execution.</li>
+            </ul>
+            <p>Authors claiming mechanized results should provide anonymized build instructions, pinned tool versions, theorem entry points, and disclosures of admitted statements or extra axioms. Optional artifact review will report what was actually checked; it does not certify deployment safety. Empirical and position papers should explain the guarantee they test or seek and the gap their work exposes.</p>
+
+            <h3>Conflicts of interest and AI use</h3>
+            <p>Institutional, research-group, and collaborator conflicts will be respected. An independent external handling editor will manage submissions for which the organizing team is conflicted. Organizer-authored papers will not be eligible for oral slots or awards.</p>
+            <p>Human authors remain responsible for all submissions, and reviews and decisions will be human-led. Substantive AI assistance must be disclosed. AI will not serve as a primary author or reviewer. Submissions must be primarily human-authored; AI-generated papers will not be accepted.</p>
+
+            <h3>Participation</h3>
+            <p>The workshop is planned for in-person participation. We plan to publish papers, posters, artifact links, and a discussion report online. Recordings will depend on participant consent and conference audiovisual support. For exceptional travel or visa barriers, proxy poster display and prerecorded contributions will be accommodated.</p>
+
+            <h3>Contact</h3>
+            <p>For questions about submissions and the workshop, contact <a href="mailto:verifiableagentsafety@gmail.com">verifiableagentsafety@gmail.com</a>.</p>
+        </section>
+    </div>
+
+    <button id="goToTopBtn" title="Go to top">Top</button>
+
+    <div id="footer"></div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./custom.js"></script>
+    <script src="./load-templates.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Verifiable Agent Safety | ICLR 2027 Workshop</title>
+    <meta name="description" content="Proposed ICLR 2027 workshop on Verifiable Agent Safety: machine-checkable guarantees for agents that reason, act, and adapt.">
+    <meta name="twitter:card" content="summary">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+    <div id="header"></div>
+    <div id="navbar"></div>
+
+    <div class="container mt-5">
+        <article>
+            <section id="home" class="Description">
+                <h2>Description</h2>
+                <p><b>What can we prove about an AI agent before it acts, while it runs, and after it changes?</b></p>
+                <p>AI agents turn model outputs into tool calls, persistent state changes, and interactions with other agents. A plausible plan can still exceed a user's authority, reveal protected information, or repeat an external action after a retry. These failures require reasoning about the interaction between a learned policy, its execution environment, and the mechanism that enforces the user's constraints.</p>
+                <p>The Verifiable Agent Safety workshop brings together machine learning, formal methods, programming languages, security, and AI safety researchers. Our focus is <b>verifying the agent system itself</b>: its permitted effects, workflow, state transitions, communication, and oversight mechanisms. We ask which properties can be specified precisely, checked independently, and preserved throughout execution.</p>
+                <p>We will study how learning can make these guarantees practical through specification synthesis, proof generation, verification feedback, and adaptation that preserves established invariants. Lean-based mechanization provides a concrete starting point; contributions using other proof assistants, verified monitors, model checking, or sound decision procedures are welcome when they address a clearly stated agent-safety property.</p>
+            </section>
+
+            <section id="topics" class="Topics">
+                <h2>Call for Paper Topics</h2>
+                <p>Topics include, but are not limited to:</p>
+                <ol>
+                    <li><strong>Specifications that capture user intent:</strong> Permission, information-flow, resource, and task-completion contracts; autoformalization, ambiguity and vacuity detection, and human correction.</li>
+                    <li><strong>Safe actions and runtime enforcement:</strong> Proof-carrying actions, verified tool interfaces, complete mediation, fail-closed execution, and connections between abstract guarantees and their implementation.</li>
+                    <li><strong>Long-horizon composition and adaptation:</strong> Preserving invariants and obligations across memory, delegation, workflow revision, retries, checkpointing, restoration, forking, and merging.</li>
+                    <li><strong>Communication, evidence, and oversight:</strong> Verifiable multi-agent protocols, provenance, adversarial debate, and the assumptions placed on observations, semantic interpretations, and judgments.</li>
+                    <li><strong>Learning and evaluation with guarantees:</strong> Verification feedback for training and inference; specification gaming, guarantee coverage, attacks, task success, verification costs, and unnecessary refusals.</li>
+                </ol>
+            </section>
+
+            <section id="cfp" class="location">
+                <h2>Call for Papers</h2>
+                <p>We invite formal results, verified monitors, empirical studies, replications, and carefully analyzed counterexamples. Complete system verification is not required. Papers describing demonstrations may include a video and artifact link.</p>
+                <p><b>One paper track: 4–9 pages</b>, excluding references and optional appendices. Submissions will undergo double-blind review on OpenReview. The workshop is <b>non-archival</b>.</p>
+                <p><b><a href="./cfp.html">Submission Guidelines and Policies</a></b></p>
+                <p><b>Submission portal and formatting template:</b> To be announced. Submissions are not yet open.</p>
+                <div class="important-dates">
+                    <b>Important dates (tentative):</b>
+                <p>Dates are proposed and subject to confirmation. Submission deadlines are at 23:59 Anywhere on Earth (AoE).</p>
+                <ul>
+                    <li><span style="color: red;">Abstract Registration Deadline: January 25, 2027</span></li>
+                    <li><span style="color: red;">Paper Submission Deadline: February 1, 2027</span></li>
+                    <li>Author Notification: February 26, 2027</li>
+                    <li>Workshop Date: April 29 or 30, 2027 (assigned day to be confirmed)</li>
+                </ul>
+                </div>
+            </section>
+
+            <section id="schedule">
+                <h2>Tentative Schedule</h2>
+                <p>The proposed one-day program combines research presentations, posters and demonstrations, a guarantee clinic, and community discussion. Times are local to the workshop venue and will be aligned with the conference schedule.</p>
+                <table class="table table-striped">
+                    <thead><tr><th scope="col">Local Time</th><th scope="col">Event</th></tr></thead>
+                    <tbody>
+                        <tr><td>08:30–08:40</td><td>Opening: research questions and the guarantee-card exercise</td></tr>
+                        <tr><td>08:40–10:20</td><td>Invited talks (four sessions)</td></tr>
+                        <tr><td>10:20–10:50</td><td>Coffee and informal exchange</td></tr>
+                        <tr><td>10:50–11:35</td><td>Contributed session I</td></tr>
+                        <tr><td>11:35–12:20</td><td>Poster and demo session I</td></tr>
+                        <tr><td>12:20–13:20</td><td>Lunch and open networking</td></tr>
+                        <tr><td>13:20–14:35</td><td>Invited talks (three sessions)</td></tr>
+                        <tr><td>14:35–15:20</td><td>Contributed session II</td></tr>
+                        <tr><td>15:20–15:40</td><td>Coffee and informal exchange</td></tr>
+                        <tr><td>15:40–16:10</td><td>Guarantee clinic: assumptions and failure cases</td></tr>
+                        <tr><td>16:10–16:55</td><td>Panel: Which guarantees survive contact with a real agent runtime?</td></tr>
+                        <tr><td>16:55–17:40</td><td>Poster and demo session II</td></tr>
+                        <tr><td>17:40–17:50</td><td>Closing: group reports and next steps</td></tr>
+                    </tbody>
+                </table>
+                <p>The guarantee clinic will examine claims, assumptions, and failure cases using an agent guarantee card. Planned outcomes include a shared benchmark agenda, a public index of formalizations and open problems, and a post-workshop discussion report.</p>
+            </section>
+
+            <section id="organizers" class="Organizers">
+                <h2>Organizers</h2>
+                <div class="people-grid">
+                    <div class="organizer">
+                        <img src="images/wuyang_chen.jpg" alt="Wuyang Chen">
+                        <div class="organizer-info">
+                            <h3><a href="https://delta-lab-ai.github.io/people.html" target="_blank" rel="noopener noreferrer">Wuyang Chen</a></h3>
+                        </div>
+                    </div>
+                    <div class="organizer">
+                        <img src="images/kaiyu_yang.jpg" alt="Kaiyu Yang">
+                        <div class="organizer-info">
+                            <h3><a href="https://yangky11.github.io/" target="_blank" rel="noopener noreferrer">Kaiyu Yang</a></h3>
+                        </div>
+                    </div>
+                    <div class="organizer">
+                        <img src="images/xiaodong.png" alt="Xiaodong Liu">
+                        <div class="organizer-info">
+                            <h3><a href="https://www.microsoft.com/en-us/research/people/xiaodl/" target="_blank" rel="noopener noreferrer">Xiaodong Liu</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </div>
+
+    <button id="goToTopBtn" title="Go to top">Top</button>
+
+    <div id="footer"></div>
+
+    <script src="./load-templates.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./custom.js"></script>
+</body>
+</html>

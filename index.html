@@ -22,6 +22,7 @@
                 <p>AI agents turn model outputs into tool calls, persistent state changes, and interactions with other agents. A plausible plan can still exceed a user's authority, reveal protected information, or repeat an external action after a retry. These failures require reasoning about the interaction between a learned policy, its execution environment, and the mechanism that enforces the user's constraints.</p>
                 <p>The Verifiable Agent Safety workshop brings together machine learning, formal methods, programming languages, security, and AI safety researchers. Our focus is <b>verifying the agent system itself</b>: its permitted effects, workflow, state transitions, communication, and oversight mechanisms. We ask which properties can be specified precisely, checked independently, and preserved throughout execution.</p>
                 <p>We will study how learning can make these guarantees practical through specification synthesis, proof generation, verification feedback, and adaptation that preserves established invariants. Lean-based mechanization provides a concrete starting point; contributions using other proof assistants, verified monitors, model checking, or sound decision procedures are welcome when they address a clearly stated agent-safety property.</p>
+                <p><b>Why ICLR:</b> Agent safety connects representation learning, reinforcement learning, generalization, and verifier-guided training and inference.</p>
             </section>
 
             <section id="topics" class="Topics">
@@ -38,6 +39,7 @@
 
             <section id="speakers" class="Speakers">
                 <h2>Confirmed Speakers (A-Z by Last Name)</h2>
+                <p>The program includes formal methods and runtime enforcement through Jun Sun’s work on AgentSpec and ProbGuard, and verified policies through Long T. Le’s work on VeriGuard. Talk topics remain tentative.</p>
                 <div class="people-grid">
                     <div class="speaker">
                         <img src="images/long_le.jpeg" alt="Long T. Le">
@@ -63,7 +65,7 @@
                     <div class="speaker">
                         <img src="images/alina_oprea%20.jpg" alt="Alina Oprea">
                         <div class="speaker-info">
-                            <h3><a href="https://www.ccs.neu.edu/home/alina/" target="_blank" rel="noopener noreferrer">Alina Oprea</a></h3>
+                            <h3><a href="https://www.khoury.northeastern.edu/home/alina/index.html" target="_blank" rel="noopener noreferrer">Alina Oprea</a></h3>
                             <p>Professor, Northeastern University</p>
                         </div>
                     </div>
@@ -75,9 +77,9 @@
                         </div>
                     </div>
                     <div class="speaker">
-                        <img src="images/sun_jun.jpeg" alt="Sun Jun">
+                        <img src="images/sun_jun.jpeg" alt="Jun Sun">
                         <div class="speaker-info">
-                            <h3><a href="https://sunjun.site/" target="_blank" rel="noopener noreferrer">Sun Jun</a></h3>
+                            <h3><a href="https://sunjun.site/" target="_blank" rel="noopener noreferrer">Jun Sun</a></h3>
                             <p>Singapore Management University</p>
                         </div>
                     </div>
@@ -94,7 +96,7 @@
             <section id="cfp" class="location">
                 <h2>Call for Papers</h2>
                 <p>We invite formal results, verified monitors, empirical studies, replications, and carefully analyzed counterexamples. Complete system verification is not required. Papers describing demonstrations may include a video and artifact link.</p>
-                <p><b>Two paper tracks: regular papers (4–9 pages) and short papers (2–4 pages)</b>, excluding references and optional appendices. Submissions will undergo double-blind review on OpenReview. The workshop is <b>non-archival</b>.</p>
+                <p><b>Two paper tracks: regular papers (5–9 pages) and short papers (2–4 pages)</b>, excluding references and optional appendices. Submissions will undergo double-blind review on OpenReview. The workshop is <b>non-archival</b>.</p>
                 <p>The short-paper track welcomes late-breaking ideas, modest self-contained results, replications, counterexamples, and early-stage work. Both tracks use the deadlines below and are eligible for contributed talks and posters.</p>
                 <p><b><a href="./cfp.html">Submission Guidelines and Policies</a></b></p>
                 <p><b>Submission portal and formatting template:</b> To be announced. Submissions are not yet open.</p>
@@ -112,32 +114,29 @@
 
             <section id="schedule">
                 <h2>Tentative Schedule</h2>
-                <p>Seven invited talks each have 25 minutes of presentation plus 5 minutes of Q&amp;A. Speaker order is tentative. All times are local; breaks will align with the conference schedule.</p>
+                <p>The workshop starts at <b>09:00</b> and ends at <b>17:00</b>, strictly. All times are local. Seven invited talks each have 25 minutes of presentation plus 5 minutes of Q&amp;A. Speaker order is tentative.</p>
                 <table class="table table-striped">
                     <thead><tr><th scope="col">Local Time</th><th scope="col">Event</th></tr></thead>
                     <tbody>
-                        <tr><td>08:30–08:45</td><td>Opening / guarantee cards</td></tr>
-                        <tr><td>08:45–09:15</td><td>Invited talk 1</td></tr>
-                        <tr><td>09:15–09:45</td><td>Invited talk 2</td></tr>
-                        <tr><td>09:45–10:05</td><td>Coffee / discussion</td></tr>
-                        <tr><td>10:05–10:35</td><td>Invited talk 3</td></tr>
-                        <tr><td>10:35–11:05</td><td>Invited talk 4</td></tr>
-                        <tr><td>11:05–11:35</td><td>Contributed talks I</td></tr>
-                        <tr><td>11:35–12:35</td><td>Posters and demos I</td></tr>
-                        <tr><td>12:35–13:35</td><td>Lunch</td></tr>
-                        <tr><td>13:35–14:05</td><td>Invited talk 5</td></tr>
-                        <tr><td>14:05–14:35</td><td>Invited talk 6</td></tr>
-                        <tr><td>14:35–15:05</td><td>Invited talk 7</td></tr>
-                        <tr><td>15:05–15:25</td><td>Coffee / discussion</td></tr>
-                        <tr><td>15:25–15:55</td><td>Contributed talks II</td></tr>
-                        <tr><td>15:55–16:25</td><td>Guarantee clinic</td></tr>
-                        <tr><td>16:25–17:10</td><td>Panel / audience Q&amp;A</td></tr>
-                        <tr><td>17:10–18:10</td><td>Posters and demos II</td></tr>
-                        <tr><td>18:10–18:20</td><td>Closing / next steps</td></tr>
+                        <tr><td>09:00–09:10</td><td>Opening / guarantee cards</td></tr>
+                        <tr><td>09:10–09:40</td><td>Invited talk 1</td></tr>
+                        <tr><td>09:40–10:10</td><td>Invited talk 2</td></tr>
+                        <tr><td>10:10–11:10</td><td>Posters / coffee I</td></tr>
+                        <tr><td>11:10–11:40</td><td>Invited talk 3</td></tr>
+                        <tr><td>11:40–12:10</td><td>Invited talk 4</td></tr>
+                        <tr><td>12:10–12:25</td><td>Contributed talks I</td></tr>
+                        <tr><td>12:25–13:25</td><td>Lunch</td></tr>
+                        <tr><td>13:25–13:55</td><td>Invited talk 5</td></tr>
+                        <tr><td>13:55–14:25</td><td>Invited talk 6</td></tr>
+                        <tr><td>14:25–14:55</td><td>Invited talk 7</td></tr>
+                        <tr><td>14:55–15:10</td><td>Contributed talks II</td></tr>
+                        <tr><td>15:10–16:10</td><td>Posters / coffee II</td></tr>
+                        <tr><td>16:10–16:55</td><td>Panel / audience Q&amp;A</td></tr>
+                        <tr><td>16:55–17:00</td><td>Closing / next steps</td></tr>
                     </tbody>
                 </table>
-                <p><b>Contributed work:</b> Each contributed session has three 10-minute talks. Accepted posters are split between two 60-minute blocks, giving every paper a full hour of discussion. For 60 posters, this means about 30 per block.</p>
-                <p><b>Guarantee-card exercise and clinic:</b> At the opening, participants record a safety claim, its assumptions, the checker or supporting evidence, and the boundary between the formal model and execution. During the 30-minute guarantee clinic, mixed-discipline small groups examine these cards for missing assumptions and failure cases, with facilitators collecting open questions.</p>
+                <p><b>Contributed work:</b> Each contributed session has three 5-minute talks. Accepted posters and demos are split between two 60-minute blocks, with coffee available during both sessions. For 60 posters, this means about 30 per block.</p>
+                <p><b>Guarantee-card exercise:</b> At the opening, participants record a safety claim, its assumptions, the checker or supporting evidence, and the boundary between the formal model and execution.</p>
                 <p><b>Panel:</b> Which guarantees survive contact with a real agent runtime? At least half of the 45-minute panel is reserved for audience questions.</p>
                 <p><b>Outcomes:</b> Within four weeks, we will publish a benchmark agenda, a public index of formalizations and open problems, and a discussion report. Contributors may review attribution before publication.</p>
             </section>
@@ -149,30 +148,35 @@
                         <img src="images/wuyang_chen.jpg" alt="Wuyang Chen">
                         <div class="organizer-info">
                             <h3><a href="https://delta-lab-ai.github.io/people.html" target="_blank" rel="noopener noreferrer">Wuyang Chen</a></h3>
+                            <p>Simon Fraser University</p>
                         </div>
                     </div>
                     <div class="organizer">
                         <img src="images/kaiyu_yang.jpg" alt="Kaiyu Yang">
                         <div class="organizer-info">
                             <h3><a href="https://yangky11.github.io/" target="_blank" rel="noopener noreferrer">Kaiyu Yang</a></h3>
+                            <p>Apodex</p>
                         </div>
                     </div>
                     <div class="organizer">
                         <img src="images/skong.png" alt="Soonho Kong">
                         <div class="organizer-info">
                             <h3><a href="https://soonhokong.github.io/" target="_blank" rel="noopener noreferrer">Soonho Kong</a></h3>
+                            <p>Amazon Web Services</p>
                         </div>
                     </div>
                     <div class="organizer">
                         <img src="images/wenxi_wang.jpg" alt="Wenxi Wang">
                         <div class="organizer-info">
                             <h3><a href="https://wenxiwang.github.io/" target="_blank" rel="noopener noreferrer">Wenxi Wang</a></h3>
+                            <p>University of Virginia</p>
                         </div>
                     </div>
                     <div class="organizer">
                         <img src="images/yueqi_xie.jpg" alt="Yueqi Xie">
                         <div class="organizer-info">
                             <h3><a href="https://xyq7.github.io/" target="_blank" rel="noopener noreferrer">Yueqi Xie</a></h3>
+                            <p>Princeton University</p>
                         </div>
                     </div>
                     <div class="organizer">
@@ -186,12 +190,14 @@
                         <img src="images/ufuk_topcu.jpg" alt="Ufuk Topcu">
                         <div class="organizer-info">
                             <h3><a href="https://scholar.google.com/citations?user=jeNGFfQAAAAJ" target="_blank" rel="noopener noreferrer">Ufuk Topcu</a></h3>
+                            <p>UT Austin</p>
                         </div>
                     </div>
                     <div class="organizer">
                         <img src="images/xiaodong.png" alt="Xiaodong Liu">
                         <div class="organizer-info">
                             <h3><a href="https://www.microsoft.com/en-us/research/people/xiaodl/" target="_blank" rel="noopener noreferrer">Xiaodong Liu</a></h3>
+                            <p>Microsoft Research</p>
                         </div>
                     </div>
                 </div>
